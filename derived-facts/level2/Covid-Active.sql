@@ -32,9 +32,4 @@ SET @resultSet=
     and lastPositive.start_date>lastNegative.start_date'
 
 
-EXECUTE spCreateL1DerivedFacts @derivedConceptCode, @resultSet;
-
-DECLARE @rowcount INT
-SELECT @rowcount = @@ROWCOUNT
-
-PRINT '@rowcount = ' + CAST(@rowcount AS VARCHAR(4))
+EXECUTE spCreateL2DerivedFacts @derivedConceptCode, @resultSet;
