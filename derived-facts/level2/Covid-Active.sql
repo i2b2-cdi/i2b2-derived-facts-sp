@@ -1,3 +1,10 @@
+/*
+{"description":"ActiveCase for COVID PCR",
+"author":"Kavishwar Wagholikar (waghsk@gmail.com)"
+"dateCreated":"2020-04-18"
+}
+*/
+
 use i2b2demodata
 DECLARE @derivedConceptCode NVARCHAR(50)
 DECLARE @resultSet VARCHAR(8000)
